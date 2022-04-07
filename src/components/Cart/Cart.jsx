@@ -30,7 +30,7 @@ const Cart = ({onCloseCart}) => {
 
     const sumbitOrderHanlder = async (userData) => {
         setIsSubmiting(true)
-        await fetch('https://food-orderapp-6855b-default-rtdb.firebaseio.com/orders.json',{
+        await fetch('',{
             method: 'POST',
             body: JSON.stringify({
                 user: userData,
